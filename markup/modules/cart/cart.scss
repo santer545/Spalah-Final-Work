@@ -1,0 +1,71 @@
+.cart{
+	padding-bottom: 4rem;
+	&-item{
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid $black;
+		margin-bottom: 3rem;
+		padding-bottom: 3rem;
+	}
+	&-number{
+		padding: 0 1rem;
+		font-size: 1.5rem;
+	}
+	&-img-wr{
+		padding-right: 4.6875rem;
+	}
+	&-img{
+		border: 1px solid $brand-color;
+	}
+	&-name-wr{
+		padding-right: 4rem;
+	}
+	&-name{
+		font-size: 1.9375rem;
+		color: $thumbnail-name-color;
+	}
+	&-size-wr{
+		padding-right: 2rem;
+	}
+	&-size{
+		font-size: 2.25rem;
+		display: inline-block;
+		padding: 0.3rem;
+		border: 1px solid $brand-color;
+	}
+	&-price-wr{
+		padding-right: 1rem;
+	}
+	&-price{
+		font-size: 1.9375rem;
+		color: $brand-color;
+	}
+	&-table-wr{
+		padding-right: 1.5rem;
+	}
+	&-table{
+		display: block;
+		font-size: 1.125rem;
+		color: $brand-color;
+	}
+	&-instock{
+		font-size: 1.5rem;
+		color: $brand-color;
+	}
+	&-close{
+		padding-right: 1.5rem;
+		font-size: 2rem;
+		cursor: pointer;
+	}
+	&-total{
+		font-size: 2.25rem;
+		text-align: right;
+		&-span{
+			margin-left: 6rem;
+		}
+	}
+	&-buttons-wr{
+		padding-top: 3rem;
+		text-align: center;
+	}
+}

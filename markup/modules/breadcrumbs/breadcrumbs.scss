@@ -1,0 +1,33 @@
+.breadcrumbs{
+	padding: 1.7rem 0;
+	margin: 0;
+	list-style-type: none;
+	&-item{
+		display: inline-block;
+	}
+	&-item + li{
+		position: relative;
+		padding: 0 0 0 1.5rem;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0.5rem;
+			width: 5px;
+			height: 5px;
+			background-color: $brand-color;
+		}
+	}
+	&-link{
+		font-size: 0.875rem;
+		color: $breadcrumbs-color;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	&-active{
+		font-size: 0.875rem;
+		color: $brand-color;
+	}
+}

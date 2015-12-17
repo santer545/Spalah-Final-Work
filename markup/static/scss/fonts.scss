@@ -1,0 +1,69 @@
+/* Your custom fonts here */
+
+/* Example
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Custom-Font.eot');
+    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Custom-Font.woff') format('woff'),
+         url('../fonts/Custom-Font.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+    }
+
+
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+*/
+
+
+@font-face {
+	font-family: 'AvantGardeGothicC';
+	src: url('../fonts/AvantGardeGothicC.eot');
+	src: local('☺'), url('../fonts/AvantGardeGothicC.woff') format('woff'), url('../fonts/AvantGardeGothicC.ttf') format('truetype'), url('../fonts/AvantGardeGothicC.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'icomoon-obuvach';
+	src:url('../fonts/icomoon.eot?yw8q2s');
+	src:url('../fonts/icomoon.eot?yw8q2s#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?yw8q2s') format('truetype'),
+		url('../fonts/icomoon.woff?yw8q2s') format('woff'),
+		url('../fonts/icomoon.svg?yw8q2s#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon-obuvach' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-basket:before {
+	content: "\e900";
+}
+.icon-like51:before {
+	content: "\e901";
+}
+.icon-magnifier56:before {
+	content: "\e902";
+}

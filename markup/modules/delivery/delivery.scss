@@ -1,0 +1,15 @@
+.delivery{
+	padding-bottom: 3rem;
+	&-list{
+		margin-bottom: 6.25rem;
+	}
+	&-item{
+		text-align: center;
+		@media (max-width: 991px){
+			margin-bottom: 3rem;
+		}
+	}
+	&-h3{
+		font-size: 3.5rem;
+	}
+}

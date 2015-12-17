@@ -1,0 +1,111 @@
+.header{
+	span{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&-top{
+		padding: 1rem 0;
+		@include clearfix;
+		&--right{
+			float: right;
+			font-size: 1.125rem;
+			@media (max-width: 992px){
+				float: none;
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+			[class^="icon-"]{
+				font-size: 1.5rem;
+			}
+		}
+		&--left{
+			font-size: 1.3125rem;
+			float: left;
+			@media (max-width: 992px){
+				float: none;
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+			span{
+				margin-right: 1rem;
+				@media (max-width: 767px){
+					display: block;
+					margin: 0 0 1rem;
+				}
+			}
+		}
+	}
+	&-link{
+		display: inline-block;
+		margin-right: 3rem;
+		color: $black;
+		text-decoration: none;
+		@media (max-width: 767px){
+			margin: 0;
+			&:nth-child(2){
+				margin-right: 1rem;
+			}
+		}
+	}
+	&--size-table{
+		text-decoration: none;
+		margin-right: 3rem;
+		@media (max-width: 767px){
+			display: block;
+			margin-bottom: 1rem;
+			margin-right: 0;
+		}
+	}
+	&-bottom{
+		text-align: center;
+		margin-bottom: 1.5625rem;
+	}
+	&-nav{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		display: inline-block;
+		vertical-align: middle;
+		@media (max-width: 992px){
+			display: block;
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+		@media (max-width: 767px){
+			text-align: justify;
+			&:after{
+				content: '';
+				width: 100%;
+				display: inline-block;
+			}
+		}
+		&-list{
+			display: inline-block;
+			margin-right: 1.5rem;
+			@media (max-width: 767px){
+				margin-right: 0;
+			}
+		}
+		&-link{
+			color: #000;
+			text-decoration: none;
+			&:hover{
+				color: #7e7f84;
+			}
+		}
+	}
+	&-logo{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 1.5rem;
+		@media (max-width: 992px){
+			display: block;
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+		@media (max-width: 767px){
+			text-align: center;
+			margin-right: 0;
+		}
+	}
+}

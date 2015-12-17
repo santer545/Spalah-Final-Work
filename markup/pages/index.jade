@@ -1,0 +1,33 @@
+doctype html
+|<!--[if IE 7]><html class="ie7 lt-ie10 lt-ie9 lt-ie8 no-js" lang="ru"><![endif]-->
+|<!--[if IE 8]><html class="ie8 lt-ie10 lt-ie9 no-js" lang="ru"><![endif]-->
+|<!--[if IE 9 ]><html class="ie9 lt-ie10 no-js" lang="ru"><![endif]-->
+|<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="ru"><!--<![endif]-->
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/navbar/navbar
+include ../modules/slider-main/slider-main
+include ../modules/shares/shares
+include ../modules/popular/popular
+include ../modules/novelty/novelty
+include ../modules/footer/footer
+
+head
+	+head(head.defaults)
+body.page
+	.wrapper
+		.container-fluid
+			+header()
+			+navbar()
+			+slider-main()
+			+shares()
+			section.info
+				|Более 8 лет известно на рынке как производитель мужской обуви. С 2009 года производство запустило линию по производству женской обуви. Все модели изготавливаются из натурального высококачественного сырья и материалов. Ассортимент обуви обновляется с учетом требований современного дизайна и тенденций моды. Наша обувь сертифицирована на территории Украины и Российской Федерации. Высокое качество и стиль продукции достигается за счет применения современного оборудования и новейших технологий обувной отрасли
+			+popular()
+			//- +novelty()
+		+footer()
+
+	//- Main scripts. You can replace it, but I recommend you to leave it here
+	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')
+|</html>

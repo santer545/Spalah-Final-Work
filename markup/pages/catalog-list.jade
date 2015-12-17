@@ -1,0 +1,63 @@
+doctype html
+|<!--[if IE 7]><html class="ie7 lt-ie10 lt-ie9 lt-ie8 no-js" lang="ru"><![endif]-->
+|<!--[if IE 8]><html class="ie8 lt-ie10 lt-ie9 no-js" lang="ru"><![endif]-->
+|<!--[if IE 9 ]><html class="ie9 lt-ie10 no-js" lang="ru"><![endif]-->
+|<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="ru"><!--<![endif]-->
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/navbar/navbar
+include ../modules/breadcrumbs/breadcrumbs
+include ../modules/catalog/catalog
+include ../modules/catalog-list/catalog-list
+include ../modules/filter/filter
+include ../modules/footer/footer
+
+head
+	+head(head.defaults)
+body.page
+	.wrapper
+		.container-fluid
+			+header()
+			+navbar()
+			+breadcrumbs()
+			.row
+				.col-md-7.col-md-offset-4
+					.sortline
+						form
+							.form-group.form-group--sort
+								label.form-label
+									|Сортировать по:
+								select#sort1(name="sort1")
+									option
+										|без сортировки
+									option
+										|по популярности
+									option
+										|от дешёвых к дорогим
+									option
+										|от дорогих к дешёвым
+							.form-group.form-group--sort
+								label.form-label
+									|Показывать по:
+								select#sort2(name="sort2")
+									option
+										|12
+									option
+										|16
+									option
+										|24
+									option
+										|48
+			.row
+				.col-md-2
+					.filter-wrapper
+						+filter()
+				.col-md-8.col-md-offset-1
+					+catalog-list()
+				.col-md-1
+		+footer()
+
+	//- Main scripts. You can replace it, but I recommend you to leave it here
+	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')
+|</html>

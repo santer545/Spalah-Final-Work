@@ -1,0 +1,17 @@
+.product{
+	&-img--big{
+		position: relative;
+	}
+	&-labe{
+		
+	}
+	&-labe--sale{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 7.5rem;
+		height: 3.125rem;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}

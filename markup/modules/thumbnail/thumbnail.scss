@@ -1,0 +1,147 @@
+.thumbnail{
+	border: 1px solid #eeeeee;
+	transition: border-color 0.5s;
+
+	&-item--catalog-list{
+		display: flex;
+		align-items: center;
+		margin-bottom: 8.4375rem;
+		@media (max-width: 767px){
+			display: block;
+			margin-bottom: 3rem;
+		}
+	}
+	&-catalog-list{
+
+	}
+	&:hover{
+		border: 1px solid $brand-color;
+	}
+	&-catalog-list{
+		border: none;
+		&:hover{
+			border: none;
+		}
+	}
+	&-catalog{
+		margin-bottom: 6.25rem;
+	}
+	&-text{
+		font-family: $thumbnail-font;
+		text-align: left;
+		padding: 1.25rem;
+		&--catalog-list{
+			padding: 1.25rem 4rem;
+			@media (max-width: 767px){
+				padding: 0.5rem 0;
+				text-align: center;
+			}
+		}
+	}
+	&-name{
+		font-size: 0.9375rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding-bottom: 0.75rem;
+		border-bottom: 1px solid #f0f0f0;
+		margin-bottom: 0;
+		&--catalog-list{
+			font-size: 1.875rem;
+			border: none;
+			@media (max-width: 1199px){
+				font-size: 1rem;
+			}
+			@media (max-width: 767px){
+				font-size: 1.875rem;
+				padding: 0;
+			}
+		}
+	}
+	&-name-link{
+		font-size: 0.9375rem;
+		text-transform: uppercase;
+		color: $thumbnail-name-color;
+		text-decoration: none;
+		&--catalog-list{
+			font-size: 1.875rem;
+			text-transform: none;
+			@media (max-width: 1199px){
+				font-size: 1rem;
+			}
+			@media (max-width: 767px){
+				font-size: 1.875rem;
+				padding: 0;
+			}
+		}
+	}
+	&-img{
+		width: 100%;
+		&-wr{
+			a{
+				display: block;
+			}
+			border-bottom: 2px solid #eeeeee;
+			&--catalog-list{
+				border: 1px solid $brand-color;
+			}
+		}
+	}
+	&-control{
+		@include clearfix;
+		padding-top: 0.75rem;
+	}
+	&-price{
+		color: $brand-color;
+		font-size: 0.75rem;
+		float: left;
+		&-number{
+			display: block;
+		}
+		&--catalog-list{
+			font-size: 1.875rem;
+			@media (max-width: 1199px){
+				font-size: 1rem;
+			}
+			@media (max-width: 767px){
+				font-size: 1.875rem;
+				padding: 0;
+				text-align: center;
+				float: none;
+			}
+		}
+	}
+	&-size{
+		color: $thumbnail-name-color;
+		padding-right: 0 0.5rem;
+		margin-right: 0.2rem;
+	}
+	&-buttons{
+		float: right;
+		&-link{
+			display: inline-block;
+			color: $black;
+			text-decoration: none;
+			&--catalog-list{
+				font-size: 3rem;
+				display: inline;
+			}
+			&--catalog-list-buy{
+				color: $brand-color;
+				margin-right: 1rem;
+			}
+			&--catalog-list-basket{
+				color: $thumbnail-name-color;
+			}
+			span{
+				margin-right: 0.5rem;
+			}
+		}
+		&--catalog-list{
+			float: none;
+			@media (max-width: 767px){
+				text-align: center;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,87 @@
+.shares{
+	margin-bottom: 5rem;
+	@include clearfix;
+	&-text{
+		margin-bottom: 2.5rem;
+		&--inner{
+			padding: 3.75rem 0;
+			border: 1px solid $brand-color;
+			text-align: center;
+			@media (max-width: 767px){
+				margin-bottom: 1rem;
+			}
+		}
+	}
+	&-span{
+		font-size: 1.5rem;
+		font-style: italic;
+		display: inline-block;
+		vertical-align: top;
+	}
+	&-percent{
+		font-size: 3.75rem;
+		color: $black;
+	}
+	&-images{
+		@include clearfix;
+		&-inner{
+			position: relative;
+			width: 50%;
+			float: left;
+			@media (max-width: 767px){
+				float: none;
+				width: 100%;
+			}
+			img{
+				width: 100%;
+			}
+		}
+		&-text{
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 1.5rem;
+			background-color: rgba(0, 0, 0, 0.4);
+			font-size: 1.875rem;
+			text-align: center;
+			color: $white;
+			font-style: italic;
+			@media (max-width: 992px){
+				font-size: 1.275rem;
+			}
+			@media (max-width: 767px){
+				font-size: 0.875rem;
+				padding: 0.5rem;
+			}
+			&--right-top{
+				right: 10%;
+				top: 5%;
+				left: auto;
+			}
+			&--right-bottom{
+				right: 10%;
+				bottom: 5%;
+				left: auto;
+				top: auto;
+			}
+			&--center-bottom{
+				top: 50%;
+				left: 20%;
+			}
+			p{
+				margin-bottom: 0;
+			}
+			&--price{
+				display: block;
+				font-size: 3rem;
+				color: $brand-color;
+				@media (max-width: 992px){
+					font-size: 1rem;
+				}
+				@media (max-width: 767px){
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}

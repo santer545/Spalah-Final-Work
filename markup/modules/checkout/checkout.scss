@@ -1,0 +1,16 @@
+.checkout{
+	padding-bottom: 3rem;
+	&-buttons-wr{
+		text-align: center;
+		padding-top: 3rem;
+	}
+	&-payment{
+		text-align: center;
+		@media (max-width: 767px){
+			margin-bottom: 3rem;
+		}
+	}
+	&-delivery{
+		text-align: center;
+	}
+}
