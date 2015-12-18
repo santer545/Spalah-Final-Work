@@ -9,7 +9,7 @@
 		padding: 0 0 0 0.5rem;
 	}
 	&-label{
-		font-size: 0.875rem;
+		font-size: $filter-label-font-size;
 	}
 	&-checkbox{
 		display: none;
@@ -17,8 +17,8 @@
 	&-fake-checkbox{
 		position: relative;
 		display: inline-block;
-		width: 11px;
-		height: 11px;
+		width: $fake-checkbox-size;
+		height: $fake-checkbox-size;
 		border: 1px solid $brand-color;
 		margin-right: 0.75rem;
 		padding: 2px;
@@ -27,8 +27,8 @@
 		&:before{
 			content: '';
 			position: absolute;
-			width: 5px;
-			height: 5px;
+			width: $fake-checkbox-after-size;
+			height: $fake-checkbox-after-size;
 			background-color: $brand-color;
 		}
 	}

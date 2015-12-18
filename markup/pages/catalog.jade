@@ -11,6 +11,7 @@ include ../modules/breadcrumbs/breadcrumbs
 include ../modules/catalog/catalog
 include ../modules/filter/filter
 include ../modules/footer/footer
+include ../modules/modals/modals
 
 head
 	+head(head.defaults)
@@ -21,7 +22,7 @@ body.page
 			+navbar()
 			+breadcrumbs()
 			.row
-				.col-md-7.col-md-offset-4
+				.col-md-9.col-lg-offset-4.col-lg-7.col-sm-9.col-sm-offset-3.col-md-offset-3
 					.sortline
 						form
 							.form-group.form-group--sort
@@ -48,6 +49,14 @@ body.page
 										|24
 									option
 										|48
+							.form-group.form-group--sort
+								a(href="catalog-list.html").view.active
+									svg(class="icon icon-grid")
+										use(xlink:href="#icon-grid")
+							.form-group.form-group--sort
+								a(href="catalog.html").view
+									svg(class="icon icon-grid-1")
+										use(xlink:href="#icon-grid-1")
 			.row
 				.col-md-2
 					.filter-wrapper
@@ -56,7 +65,7 @@ body.page
 					+catalog()
 				.col-md-1
 		+footer()
-
+	+modals()
 	//- Main scripts. You can replace it, but I recommend you to leave it here
 	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')
 |</html>

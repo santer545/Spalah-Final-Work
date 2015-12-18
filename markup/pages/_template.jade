@@ -6,6 +6,7 @@ doctype html
 
 include ../modules/head/head
 include ../modules/header/header
+include ../modules/modals/modals
 include ../modules/footer/footer
 
 head
@@ -17,6 +18,7 @@ body.page
 	+header()
 	
 	+footer()
+	+modals()
 
 	//- Main scripts. You can replace it, but I recommend you to leave it here
 	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')

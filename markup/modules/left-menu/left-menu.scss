@@ -1,0 +1,33 @@
+.left-menu{
+	padding: 0;
+	margin: 3.75rem 0 0 0;
+	list-style-type: none;
+	&--child{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	&-item{
+		margin-bottom: 1.8rem;
+		&--novelty{
+			margin-bottom: 1rem;
+		}
+	}
+	&-link{
+		display: block;
+		margin-bottom: 1.8rem;
+		font-size: $left-menu-font-size;
+		color: $brand-color;
+		text-decoration: none;
+		&--novelty{
+			color: $black;
+			font-size: 1rem;
+			margin-bottom: 0;
+		}
+		&--child{
+			font-size: $left-menu-child-font-size;
+			color: $black;
+			margin-bottom: 0;
+		}
+	}
+}

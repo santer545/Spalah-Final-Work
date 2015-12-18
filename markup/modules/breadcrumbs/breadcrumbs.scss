@@ -19,7 +19,7 @@
 		}
 	}
 	&-link{
-		font-size: 0.875rem;
+		font-size: $breadcrumbs-font-size;
 		color: $breadcrumbs-color;
 		text-decoration: none;
 		&:hover{
@@ -27,7 +27,7 @@
 		}
 	}
 	&-active{
-		font-size: 0.875rem;
+		font-size: $breadcrumbs-font-size-active;
 		color: $brand-color;
 	}
 }

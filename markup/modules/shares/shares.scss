@@ -13,13 +13,13 @@
 		}
 	}
 	&-span{
-		font-size: 1.5rem;
+		font-size: $shares-font-size;
 		font-style: italic;
 		display: inline-block;
 		vertical-align: top;
 	}
 	&-percent{
-		font-size: 3.75rem;
+		font-size: $shares-percent;
 		color: $black;
 	}
 	&-images{
@@ -42,7 +42,7 @@
 			left: 0;
 			padding: 1.5rem;
 			background-color: rgba(0, 0, 0, 0.4);
-			font-size: 1.875rem;
+			font-size: $shares-text;
 			text-align: center;
 			color: $white;
 			font-style: italic;

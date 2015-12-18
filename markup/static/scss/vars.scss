@@ -1,15 +1,35 @@
-// my variables
+// Obramenko Alexandr variables
+
+
 
 $base-font:                       'AvantGardeGothicC', Arial, sans-serif;
-$thumbnail-font:                  'Myriad Pro';
+$body-font-size:                  1.125rem;
 $brand-color:                     #98b327;
 $white:                           #ffffff;
 $black:                           #000000;
 $heading-h2-color:                #3e3939;
-$thumbnail-name-color:            #67686d;
-$breadcrumbs-color:               #7e7f84;
+
+
 $pagination-active-color:         #7e7f84;
 
+
+// headings
+
+$delivery-h3-font-size:          3.5rem;
+$slider-heading:                 2.375rem;
+$slider-heading-tablet:          1.375rem;
+$filter-heading:                 1.25rem;
+$heading-h2:                     2.25rem;
+$heading-icon:                   3.5rem;
+
+
+
+// breadcrumbs 
+$breadcrumbs-color:               #7e7f84;
+$breadcrumbs-font-size:           0.875rem;
+$breadcrumbs-font-size-active:           0.875rem;
+
+// buttons
 
 $btn-padding-y:                   0.1rem;
 $btn-padding-x:                   0.8rem;
@@ -20,9 +40,89 @@ $btn-success-padding-vr:          0.7rem;
 $btn-success-font:                1rem;
 $btn-success-radius:                5px;
 
+// products in cart
+
+$pice-font-size:                  1.9375rem;
+$table-font-size:                 1.125rem;
+$cart-close-font-size:            2rem;
+$cartinstock-font-size:           1.5rem;
+$cart-total-font-size:                      2.25rem;
+$cart-name-font-size:                       1.9375rem;
+$cart-size-font-size:                       2.25rem;
+$cart-number-font-size:                       1.5rem;
 
 
-// Variables bootstrap
+
+// filter
+
+$filter-label-font-size:            0.875rem;
+$fake-checkbox-size:                11px;
+$fake-checkbox-after-size:                5px;
+
+
+// forms
+
+$form-font-size:                    0.8rem;
+$form-label-font-size:             1.125rem;
+
+// header
+
+$header-top--right-font-size:      1.125rem;
+$header-top--left-font-size:      1.3125rem;
+$header-ocins-font-size:           1.5rem;
+
+$header-nav-hover-color:           #7e7f84;
+
+// left-menu
+
+$left-menu-font-size:             1.25rem;
+$left-menu-child-font-size:             0.875rem;
+
+// Modal
+
+$modal-title-font-size:           2.25rem;
+$modal-title--size-font-size:          1.5rem;
+$modal-title--size-font-size--mobile:          1rem;
+$modal-close-font-size:                 2rem;
+$modal-close-font-size--mobile:                 1rem;
+$modal-label-font-size:                3.125rem;
+
+$modal-control-color:                  #cccccc;
+
+
+// thumbnails
+
+$thumbnail-font:                  'Myriad Pro';
+$thumbnail-name-color:            #67686d;
+$thumbnail-border:                #eeeeee;
+$thumbnail-name-font-size:        0.9375rem;
+$thumbnail-name-border:        #f0f0f0;
+$thumbnail-name-list-font-size:    1.875rem;
+$thumbnail-name-list-font-size-tablet:    1rem;
+$thumbnail-price-font-size:   0.75rem;
+$thumbnail-price-list-font-size:   1.875rem;
+$thumbnail-price-list-font-size-tablet:   1rem;
+
+
+// shares
+
+$shares-font-size:          1.5rem;
+$shares-percent:           3.75rem;
+$shares-text:           1.875rem;
+
+
+// navbar
+
+$navbar-link:             1.125rem;
+
+// product-info
+
+
+
+
+/*========================================================================================================================*/
+
+// Variables bootstrap 4.0
 //
 // Copy settings from this file into the provided `_custom.scss` to override
 // the Bootstrap defaults without modifying key, versioned files.

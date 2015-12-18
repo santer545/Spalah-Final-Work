@@ -6,6 +6,11 @@
 			font-size: inherit;
 			display: inline-block;
 			margin-bottom: 0;
+			border-bottom: none;
+			vertical-align: middle;
+			@media (max-width: 992px){
+				display: block;
+			}
 		}
 		&--search{
 			font-size: 0;
@@ -14,7 +19,7 @@
 		}
 	}
 	&-control{
-		font-size: 0.8rem;
+		font-size: $form-font-size;
 		border: none;
 		&--search{
 			border-bottom: 1px groove $black;
@@ -36,11 +41,7 @@
 		display: inline-block;
 		vertical-align: middle;
 		margin-right: 1rem;
-		font-size: 1.125rem;
-	}
-
-	&-label--checkout{
-
+		font-size: $form-font-size;
 	}
 
 }

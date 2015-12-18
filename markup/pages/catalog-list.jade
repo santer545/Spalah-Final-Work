@@ -12,7 +12,7 @@ include ../modules/catalog/catalog
 include ../modules/catalog-list/catalog-list
 include ../modules/filter/filter
 include ../modules/footer/footer
-
+include ../modules/modals/modals
 head
 	+head(head.defaults)
 body.page
@@ -49,6 +49,14 @@ body.page
 										|24
 									option
 										|48
+							.form-group.form-group--sort
+								a(href="catalog-list.html").view.active
+									svg(class="icon icon-grid")
+										use(xlink:href="#icon-grid")
+							.form-group.form-group--sort
+								a(href="catalog.html").view
+									svg(class="icon icon-grid-1")
+										use(xlink:href="#icon-grid-1")
 			.row
 				.col-md-2
 					.filter-wrapper
@@ -57,6 +65,7 @@ body.page
 					+catalog-list()
 				.col-md-1
 		+footer()
+		+modals()
 
 	//- Main scripts. You can replace it, but I recommend you to leave it here
 	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')

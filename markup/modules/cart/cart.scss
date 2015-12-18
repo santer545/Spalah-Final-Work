@@ -6,59 +6,100 @@
 		border-bottom: 1px solid $black;
 		margin-bottom: 3rem;
 		padding-bottom: 3rem;
+		@media (max-width: 991px){
+			display: block;
+			position: relative;
+		}
+		@media (max-width: 767px){
+			text-align: center;
+		}
 	}
 	&-number{
 		padding: 0 1rem;
-		font-size: 1.5rem;
+		font-size: $cart-number-font-size;
+		@media (max-width: 991px){
+			display: none;
+		}
 	}
 	&-img-wr{
 		padding-right: 4.6875rem;
+		@media (max-width: 991px){
+			padding-right: 1rem;
+			width: 25%;
+			float: left;
+		}
+		@media (max-width: 767px){
+			width: 100%;
+			margin-bottom: 1rem;
+			float: none;
+			padding: 0;
+		}
 	}
 	&-img{
 		border: 1px solid $brand-color;
 	}
 	&-name-wr{
 		padding-right: 4rem;
+		@media (max-width: 767px){
+			padding: 0;
+			margin-bottom: 1rem;
+		}
 	}
 	&-name{
-		font-size: 1.9375rem;
+		font-size: $cart-name-font-size;
 		color: $thumbnail-name-color;
 	}
 	&-size-wr{
 		padding-right: 2rem;
+		@media (max-width: 767px){
+			padding: 0;
+			margin-bottom: 1rem;
+		}
 	}
 	&-size{
-		font-size: 2.25rem;
+		font-size: $cart-size-font-size;
 		display: inline-block;
 		padding: 0.3rem;
 		border: 1px solid $brand-color;
 	}
 	&-price-wr{
 		padding-right: 1rem;
+		@media (max-width: 767px){
+			padding: 0;
+			margin-bottom: 1rem;
+		}
 	}
 	&-price{
-		font-size: 1.9375rem;
+		font-size: $pice-font-size;
 		color: $brand-color;
 	}
 	&-table-wr{
 		padding-right: 1.5rem;
+		@media (max-width: 767px){
+			padding: 0;
+		}
 	}
 	&-table{
 		display: block;
-		font-size: 1.125rem;
+		font-size: $table-font-size;
 		color: $brand-color;
 	}
 	&-instock{
-		font-size: 1.5rem;
+		font-size: $cartinstock-font-size;
 		color: $brand-color;
 	}
 	&-close{
 		padding-right: 1.5rem;
-		font-size: 2rem;
+		font-size: $cart-close-font-size;
 		cursor: pointer;
+		@media (max-width: 991px){
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 	}
 	&-total{
-		font-size: 2.25rem;
+		font-size: $cart-total-font-size;
 		text-align: right;
 		&-span{
 			margin-left: 6rem;

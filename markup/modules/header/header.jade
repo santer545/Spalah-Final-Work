@@ -2,7 +2,7 @@ mixin header(data)
 	header.header
 		.header-top
 			.header-top--right
-				a(href="#").header--size-table
+				a(href="#" role="button" data-toggle="modal" data-target="#myModal-size").header--size-table
 					|Таблица размеров
 				a(href="#").header-link
 					span.icon-like51
@@ -13,7 +13,7 @@ mixin header(data)
 					|+38063332-32-32
 				span
 					|+38050876-67-76
-				button.btn.btn-primary
+				button.btn.btn-primary(data-toggle="modal" data-target="#myModal")
 					|Заказать звонок
 		.header-bottom
 			ul.header-nav

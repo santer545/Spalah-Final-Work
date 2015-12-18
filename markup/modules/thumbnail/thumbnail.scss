@@ -1,7 +1,9 @@
 .thumbnail{
-	border: 1px solid #eeeeee;
+	border: 1px solid $thumbnail-border;
 	transition: border-color 0.5s;
-
+	&-margin{
+		margin-bottom: 4rem;
+	}
 	&-item--catalog-list{
 		display: flex;
 		align-items: center;
@@ -39,37 +41,37 @@
 		}
 	}
 	&-name{
-		font-size: 0.9375rem;
+		font-size: $thumbnail-name-font-size;
 		font-weight: 400;
 		text-transform: uppercase;
 		padding-bottom: 0.75rem;
-		border-bottom: 1px solid #f0f0f0;
+		border-bottom: 1px solid $thumbnail-name-border;
 		margin-bottom: 0;
 		&--catalog-list{
-			font-size: 1.875rem;
+			font-size: $thumbnail-name-list-font-size;
 			border: none;
 			@media (max-width: 1199px){
-				font-size: 1rem;
+				font-size: $thumbnail-name-list-font-size-tablet;
 			}
 			@media (max-width: 767px){
-				font-size: 1.875rem;
+				font-size: $thumbnail-name-list-font-size;
 				padding: 0;
 			}
 		}
 	}
 	&-name-link{
-		font-size: 0.9375rem;
+		font-size: $thumbnail-name-font-size;
 		text-transform: uppercase;
 		color: $thumbnail-name-color;
 		text-decoration: none;
 		&--catalog-list{
-			font-size: 1.875rem;
+			font-size: $thumbnail-name-list-font-size;
 			text-transform: none;
 			@media (max-width: 1199px){
-				font-size: 1rem;
+				font-size: $thumbnail-name-list-font-size-tablet;
 			}
 			@media (max-width: 767px){
-				font-size: 1.875rem;
+				font-size: $thumbnail-name-list-font-size;
 				padding: 0;
 			}
 		}
@@ -79,8 +81,8 @@
 		&-wr{
 			a{
 				display: block;
+				position: relative;
 			}
-			border-bottom: 2px solid #eeeeee;
 			&--catalog-list{
 				border: 1px solid $brand-color;
 			}
@@ -92,18 +94,18 @@
 	}
 	&-price{
 		color: $brand-color;
-		font-size: 0.75rem;
+		font-size: $thumbnail-price-font-size;
 		float: left;
 		&-number{
 			display: block;
 		}
 		&--catalog-list{
-			font-size: 1.875rem;
+			font-size: $thumbnail-price-list-font-size;
 			@media (max-width: 1199px){
-				font-size: 1rem;
+				font-size: $thumbnail-price-list-font-size-tablet;
 			}
 			@media (max-width: 767px){
-				font-size: 1.875rem;
+				font-size: $thumbnail-price-list-font-size;
 				padding: 0;
 				text-align: center;
 				float: none;

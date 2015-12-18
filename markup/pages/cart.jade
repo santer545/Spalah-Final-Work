@@ -10,6 +10,7 @@ include ../modules/navbar/navbar
 include ../modules/breadcrumbs/breadcrumbs
 include ../modules/cart/cart
 include ../modules/footer/footer
+include ../modules/modals/modals
 
 head
 	+head(head.defaults)
@@ -21,6 +22,7 @@ body.page
 			+breadcrumbs()
 			+cart()
 		+footer()
+		+modals()
 
 	//- Main scripts. You can replace it, but I recommend you to leave it here
 	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')

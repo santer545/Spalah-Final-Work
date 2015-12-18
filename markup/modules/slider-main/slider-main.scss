@@ -9,6 +9,10 @@
 		width: 67%;
 		float: left;
 		padding-right: 1rem;
+		@media (max-width: 767px){
+			width: 100%;
+			float: none;
+		}
 		&-text{
 			position: absolute;
 			top: 50%;
@@ -27,6 +31,11 @@
 		p{
 			margin-bottom: 0;
 		}
+		&--one{
+			width: 100%;
+			padding: 0;
+			float: none;
+		}
 	}
 	&-small{
 		position: relative;
@@ -34,6 +43,9 @@
 		float: left;
 		background-size: cover;
 		background-repeat: no-repeat;
+		@media (max-width: 767px){
+			display: none;
+		}
 		&-text{
 			position: absolute;
 			top: 50%;

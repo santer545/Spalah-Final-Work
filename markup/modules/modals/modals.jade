@@ -1,0 +1,390 @@
+mixin modals(data)
+	svg(style="display:none;")
+		symbol(id="icon-cross92" viewBox="0 0 1024 1024")
+			path(class="path1" d="M602.952 512l412.177-412.155c8.872-8.882 8.872-23.275 0-32.157l-58.784-58.817c-4.264-4.254-10.064-6.659-16.089-6.659-6.036 0-11.826 2.406-16.089 6.659l-412.166 412.166-412.166-412.166c-8.539-8.539-23.651-8.528-32.168 0l-58.773 58.817c-8.882 8.882-8.882 23.275 0 32.157l412.166 412.155-412.166 412.155c-8.882 8.882-8.882 23.275 0 32.157l58.784 58.817c4.264 4.254 10.053 6.659 16.089 6.659s11.815-2.406 16.079-6.659l412.166-412.166 412.166 412.166c4.264 4.254 10.064 6.659 16.089 6.659s11.826-2.406 16.089-6.659l58.784-58.817c8.872-8.882 8.872-23.275 0-32.157l-412.187-412.155z")
+	div(class="modal modal-call fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+		div(class="modal-dialog" role="document")
+			div(class="modal-content")
+				div(class="modal-header")
+					button(type="button" class="modal-close" data-dismiss="modal" aria-label="Close")
+						svg(class="icon icon-cross92")
+							use(xlink:href="#icon-cross92")
+					h3(class="modal-title" id="myModalLabel")
+						|Заказать звонок
+				div(class="modal-body")
+					form
+						.modal-form-group
+							label.modal-form-label
+								|Имя
+							input(type="text" placeholder="Ваше имя:").modal-form-control
+						.modal-form-group
+							label.modal-form-label
+								|Телефон
+							input(type="text" placeholder="Ваш контактный номер:").modal-form-control
+						.modal-form-group
+							label.modal-form-label
+								|Комментарий
+							textarea(placeholder="Комментарий").modal-form-textarea
+				div(class="modal-footer")
+					button(type="button" class="btn btn-success btn-lg" data-dismiss="modal")
+						|перезвоните мне
+
+	div(class="modal modal-size fade" id="myModal-size" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+		div(class="modal-dialog" role="document")
+			div(class="modal-content modal-content--size")
+				div(class="modal-header modal-header--size")
+					button(type="button" class="modal-close modal-close--size" data-dismiss="modal" aria-label="Close")
+						svg(class="icon icon-cross92")
+							use(xlink:href="#icon-cross92")
+					h3(class="modal-title modal-title--size" id="myModalLabel")
+						|Руководство по размерам
+				div(class="modal-body")
+					div(class="panel-group" id="accordion" role="tablist" aria-multiselectable="true")
+						div(class="panel panel-default")
+							div(class="panel-heading" role="tab" id="headingOne")
+									a(class="panel-title-link" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+										|Обувь
+							div(id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne")
+								div(class="panel-body")
+									table.panel-body-table.table-responsive
+										tr
+											td
+												|Мужская
+										tr
+											td
+												|Украина
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|США
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+										tr
+											td
+												|Европа
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|Длина стопы, см
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+									table.panel-body-table.table-responsive
+										tr
+											td
+												|Женская
+										tr
+											td
+												|Украина
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|США
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+										tr
+											td
+												|Европа
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|Длина стопы, см
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+									table.panel-body-table.table-responsive
+										tr
+											td
+												|Детская
+										tr
+											td
+												|Украина
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|США
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+										tr
+											td
+												|Европа
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|Длина стопы, см
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+						div(class="panel panel-default")
+							div(class="panel-heading" role="tab" id="headingTwo")
+									a(class="collapsed panel-title-link" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+										|Одежда
+							div(id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo")
+								div(class="panel-body")
+									table.panel-body-table.table-responsive
+										tr
+											td
+												|Мужская
+										tr
+											td
+												|Украина
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|США
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+										tr
+											td
+												|Европа
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|Длина стопы, см
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+									table.panel-body-table.table-responsive
+										tr
+											td
+												|Женская
+										tr
+											td
+												|Украина
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|США
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+										tr
+											td
+												|Европа
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|Длина стопы, см
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+									table.panel-body-table.table-responsive
+										tr
+											td
+												|Детская
+										tr
+											td
+												|Украина
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|США
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+											td 7
+										tr
+											td
+												|Европа
+											td 39
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+											td 40
+										tr
+											td
+												|Длина стопы, см
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25
+											td 25

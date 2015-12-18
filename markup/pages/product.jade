@@ -8,14 +8,12 @@ include ../modules/head/head
 include ../modules/header/header
 include ../modules/navbar/navbar
 include ../modules/breadcrumbs/breadcrumbs
-include ../modules/filter/filter
-include ../modules/product-img/product-img
-include ../modules/product-info/product-info
+include ../modules/left-menu/left-menu
+include ../modules/slider-main/slider-main
 include ../modules/popular/popular
 include ../modules/novelty/novelty
-include ../modules/modals/modals
 include ../modules/footer/footer
-
+include ../modules/modals/modals
 head
 	+head(head.defaults)
 body.page
@@ -24,13 +22,33 @@ body.page
 			+header()
 			+navbar()
 			+breadcrumbs()
-			.product
-				.row
-					.col-lg-6
-						+product-img()
-					.col-lg-6
-						+product-info()
+			.row
+				.col-lg-2
+					+left-menu()
+				.col-lg-10
+					.slider
+						.owl-carousel
+							div
+								div.photo
+									.photo-big.photo-big--one
+										img(src="static/images/content/main-slider-1.jpg", alt="")
+										.photo-big-text
+											h2.slider-heading
+												|новая коллекция
+											p
+												|для детей
+												br 
+												|осень-зима 2015
+							div
+								div.photo
+									.photo-big.photo-big--one
+										img(src="static/images/content/main-slider-1.jpg", alt="")
+							div
+								div.photo
+									.photo-big.photo-big--one
+										img(src="static/images/content/main-slider-1.jpg", alt="")
 			+popular()
+			//- +novelty()
 		+footer()
 		+modals()
 

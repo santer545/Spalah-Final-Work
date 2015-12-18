@@ -1,9 +1,66 @@
 mixin navbar(data)
 	nav.nav
 		ul.navbar
-			li.navbar-item
-				a(href="#").navbar-link
+			li.navbar-item.dropdown
+				a(data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false").navbar-link.dropdown-toggle
 					|Женщинам
+				.dropdown-menu
+					.dropdown-section
+						ul.navbar--first-level
+							li.navbar-item--first-level
+								a(href="#").navbar-link--first-level
+									|Обувь
+								ul.navbar--second-level
+									li
+										a(href="#") Новинки
+									li
+										a(href="#") Бестселлеры
+									li
+										a(href="#") Сапоги
+									li
+										a(href="#") Ботинки
+									li
+										a(href="#") Полуботинки
+									li
+										a(href="#") Кроссовки
+									li
+										a(href="#") Кеды
+									li
+										a(href="#") Балетки
+									li
+										a(href="#") Мокасины
+									li
+										a(href="#") Туфли
+						a(href="#").navbar-link--all
+							|Смотреть все >
+					.drop-down-section
+						ul.navbar--first-level
+							li.navbar-item--first-level
+								a(href="#").navbar-link--first-level
+									|Верхняя одежда
+								ul.navbar--second-level
+									li
+										a(href="#") Новинки
+									li
+										a(href="#") Бестселлеры
+									li
+										a(href="#") Сапоги
+									li
+										a(href="#") Ботинки
+									li
+										a(href="#") Полуботинки
+									li
+										a(href="#") Кроссовки
+									li
+										a(href="#") Кеды
+									li
+										a(href="#") Балетки
+									li
+										a(href="#") Мокасины
+									li
+										a(href="#") Туфли
+						a(href="#").navbar-link--all
+							|Смотреть все >
 			li.navbar-item
 				a(href="#").navbar-link
 					|Мужчинам
